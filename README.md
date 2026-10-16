@@ -1,34 +1,28 @@
 # CI/CD Pipeline - No Cloud Needed
 
-**Project 7** | Repo: github.com/soundhar2003/cicd-static-app | Image: hub.docker.com/r/soundhar2003/cicd-static-app | Live: http://localhost:8080 | Build: 16 Oct 2026 15:04:45 IST
+**Project 4 | Build: 16 Oct 2026 15:04:45 IST | Image: 27.47 MB | Live: http://localhost:8080**
 
-### 1. Introduction
-Manual deployment inefficient. This project implements complete CI/CD without cloud, using free tools. Push to GitHub triggers Actions, builds Docker image, pushes to Hub, runs locally.
+### Workflow
+Push to GitHub -> GitHub Actions builds Docker Image -> Pushes to Docker Hub -> Pull & Run Locally
 
-### 2. Steps
-1. Push to GitHub -> 2. Actions builds image -> 3. Pushes to Docker Hub -> 4. Pull & Run Locally
+### How to Run
+docker pull soundhar2003/cicd-static-app:latest
+docker run -d -p 8080:80 --name my-cicd-app soundhar2003/cicd-static-app:latest
+Open localhost:8080
 
-### 3. How to Run Locally
+### Screenshots
 
-### 4. Screenshots
+#### 1. GitHub Repo
+![Repo](screenshorts-project/04-repo.png)
 
-#### GitHub Repo + Workflow File
-![GitHub Repo](screenshorts-project/github-repo+workflow-file.png)
+#### 2. GitHub Actions - Green Tick (MAIN PROOF)
+![Actions](screenshorts-project/03-actions.png)
 
-#### GitHub Actions - Green Tick (MAIN PROOF)
-![GitHub Actions](screenshorts-project/github-actions-cicd-workflow.p.png)
+#### 3. Docker Hub Image
+![Docker Hub](screenshorts-project/02-dockerhub.png)
 
-#### Docker Hub Image Pushed
-![Docker Hub](screenshorts-project/docker-hub-image-pushed-pro.png)
+#### 4. Deployed App - Final Proof
+![Deployed](screenshorts-project/01-deployed-.png)
 
-#### Deployed App - Wonderful UI (Final Proof)
-![Deployed App](screenshorts-project/deployedapp-local.png)
-
-#### Terminal Verification
-![Terminal](screenshorts-project/terminal.png)
-
-### 5. Build Details
-- Build: 16 Oct 2026 15:04:45 IST
-- Image Size: 27.47 MB
-- Platform: linux/amd64
-- Status: LIVE & DEPLOYED
+#### 5. Terminal Verification
+![Terminal](screenshorts-project/05-terminal.png)
